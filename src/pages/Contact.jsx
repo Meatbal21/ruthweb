@@ -68,7 +68,7 @@ const Contact = () => {
   animate={{opacity: 1, y: 0}}
   exit={{opacity: 0, y: '100%'}}
   transition={transition1}
-  className='section bg-white'>
+  className='section overflow-scroll bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200 '>
       <div className='container mx-auto h-full'>
         <div className='flex flex-col lg:flex-row h-full
         items-center justify-start pt-36 gap-x-8 text-center
@@ -130,7 +130,7 @@ const Contact = () => {
             </form>
         
           </div>
-          <motion.div 
+          {/* <motion.div 
             onMouseEnter={mouseEnterHandler}
             onMouseLeave={mouseLeaveHandler}
             initial={{opacity: 0, y: '100%'}}
@@ -139,7 +139,7 @@ const Contact = () => {
             transition={{transition: transition1, duration: 1.5}}
           className='lg:flex-1'>
             <img src={WomanImg} alt=''/>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </motion.section>
