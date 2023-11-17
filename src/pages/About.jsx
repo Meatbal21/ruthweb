@@ -25,7 +25,7 @@ const About = () => {
       className='flex flex-col lg:flex-row
       h-full items-center justify-center gap-x-24 text-center
       lg:text-left lg:pt-16 '>
-        <div className='bg-neutral-50 drop-shadow-2xl bg-blend-normal flex-1 max-h-96 lg:max-h-max
+        <div className='bg-neutral-50 drop-shadow-2xl bg-blend-normal flex-1 max-h-full lg:max-h-max
         order-2 lg:order-none'>
           <img className='relative top-1 xs:top-2 max-xs:h-full max-xs:w-full drop-shadow-2xl' src={WomanImg}/>
         </div>
