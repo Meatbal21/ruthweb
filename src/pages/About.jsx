@@ -34,11 +34,11 @@ const About = () => {
           animate={{opacity: 1, y: 0}}
           exit={{opacity: 0, y: '-80%'}}
           transition={transition1}
-        className='flex-1 h-full mt-[150px] pb-14 lg:pt-0
-        lg:w-auto z-10 flex flex-col justify-center
+        className='flex-1 h-full mt-[150px] lg:mt-[20px] pb-14 lg:pt-0
+        lg:w-full z-10 flex flex-col justify-center
         items-center lg:items-start'>
           <h1 className='h1'>About Me</h1>
-          <p className='xs:mb-12 xs:max-w-sm'>
+          <p className='xs:mb-12 xs:max-w-sm '>
           Hello, my name is Ruth!
           i've been a <b>photographer</b> for nearly 11 years now,
           i've been working in the phottography world since 2012.
