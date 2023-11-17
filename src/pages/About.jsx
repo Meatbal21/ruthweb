@@ -14,7 +14,7 @@ const About = () => {
   animate={{opacity: 1, y: 0}}
   exit={{opacity: 0, y: '100%'}}
   transition={transition1}
-  className='section overflow-scroll bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200'>
+  className='h-full w-full overflow-scroll bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200'>
     <div 
     onMouseEnter={mouseEnterHandler}
     onMouseLeave={mouseLeaveHandler}
@@ -24,7 +24,7 @@ const About = () => {
       
       className='flex flex-col lg:flex-row
       h-full items-center justify-center gap-x-24 text-center
-      lg:text-left lg:pt-16 '>
+      lg:text-left lg:pt-20 '>
         <div className='bg-neutral-50 drop-shadow-2xl bg-blend-normal flex-1 max-h-full lg:max-h-max
         order-2 lg:order-none'>
           <img className='relative top-1 xs:top-2 max-xs:h-full max-xs:w-full drop-shadow-2xl' src={WomanImg}/>
@@ -34,11 +34,11 @@ const About = () => {
           animate={{opacity: 1, y: 0}}
           exit={{opacity: 0, y: '-80%'}}
           transition={transition1}
-        className='flex-1 pt-36 pb-14 lg:pt-0
+        className='flex-1 h-full mt-[150px] pb-14 lg:pt-0
         lg:w-auto z-10 flex flex-col justify-center
-        items-center lg:items-start max-xs:pt-60'>
+        items-center lg:items-start'>
           <h1 className='h1'>About Me</h1>
-          <p className='mb-10 w-4/5 xs:mb-12 xs:max-w-sm'>
+          <p className='xs:mb-12 xs:max-w-sm'>
           Hello, my name is Ruth!
           i've been a <b>photographer</b> for nearly 11 years now,
           i've been working in the phottography world since 2012.
