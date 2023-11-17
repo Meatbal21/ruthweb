@@ -68,7 +68,7 @@ const Contact = () => {
   animate={{opacity: 1, y: 0}}
   exit={{opacity: 0, y: '100%'}}
   transition={transition1}
-  className='section overflow-scroll bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200 '>
+  className='section overflow-hidden bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200 '>
       <div className='container mx-auto h-full'>
         <div className='flex flex-col lg:flex-row h-full
         items-center justify-start pt-36 gap-x-8 text-center
@@ -86,7 +86,7 @@ const Contact = () => {
           onMouseLeave={mouseLeaveHandler}
           className='lg:flex-1 lg:pt-32 px-4'>
             <h1 className='h1'>Contact me</h1>
-            <p className='mb-12'>I would Love to get sugestion from you.</p>
+            <p className='mb-12'>I would Love to get connect with you.</p>
             <form 
             ref={formRef}
             onSubmit={handleSubmit}

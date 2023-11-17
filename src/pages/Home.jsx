@@ -40,7 +40,7 @@ const Home = () => {
           hire me
           </Link>
         </motion.div>
-        <div className='bg-red-900 flex justify-center max-h-96 lg:max-h-max max-xs:w-4/5 max-xs:mx-auto'>
+        <div className='flex justify-center max-h-96 lg:max-h-max max-xs:w-4/5 max-xs:mx-auto'>
           <motion.div
           initial={{scale: 0}}
           animate={{scale: 1}}
