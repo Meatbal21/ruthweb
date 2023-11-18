@@ -14,11 +14,11 @@ const About = () => {
   animate={{opacity: 1, y: 0}}
   exit={{opacity: 0, y: '100%'}}
   transition={transition1}
-  className='h-full w-full overflow-scroll bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200'>
+  className='section pt-12 overflow-scroll bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200'>
     <div 
     onMouseEnter={mouseEnterHandler}
     onMouseLeave={mouseLeaveHandler}
-     className='container mx-auto h-full relative'>
+     className='container mx-auto relative'>
       {/* text & img wraper */}
       <div 
       
@@ -38,7 +38,7 @@ const About = () => {
         lg:w-full z-10 flex flex-col justify-center
         items-center lg:items-start'>
           <h1 className='h1'>About Me</h1>
-          <p className='xs:mb-12 xs:max-w-sm '>
+          <p className='xs:mb-12 xs:max-w-sm text-[18px]'>
           Hello, my name is Ruth!
           i've been a <b>photographer</b> for nearly 11 years now,
           i've been working in the phottography world since 2012.
