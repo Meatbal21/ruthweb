@@ -40,14 +40,14 @@ const Home = () => {
           hire me
           </Link>
         </motion.div>
-        <div className='flex justify-center max-h-96 lg:max-h-full max-xs:w-4/5 max-xs:mx-auto'>
+        <div className='flex justify-center lg:max-h-full max-xs:w-4/5 max-xs:mx-auto'>
           <motion.div
           initial={{scale: 0}}
           animate={{scale: 1}}
           exit={{scale: 0}}
           transition={transition1}
-          className='relative w-full bg-gradient-to-b from-neutral-100 to-neutral-100 drop-shadow-2xl lg:-right-60 max-xs:-top-10 max-md:w-[400px] max-md:mx-auto'>
-            <motion.img className='mx-auto h-full lg:h-full'
+          className='relative w-full bg-gradient-to-b from-neutral-100 to-neutral-100 drop-shadow-2xl lg:-right-60 max-xs:-top-10 max-md:mx-auto'>
+            <motion.img className='mx-auto h-full  lg:h-full'
             whileHover={{scale: 1.1}}
             transition={transition1}
             src={WomanImg} alt=''/>

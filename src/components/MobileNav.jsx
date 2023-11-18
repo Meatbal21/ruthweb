@@ -58,9 +58,7 @@ const MobileNav = () => {
           <Link to={'/contact'} onClick={() => setOpenMenu(false)}>Contact</Link>
         </li>
         <li className='flex gap-x-8'>
-        <a href='http://www.facebook.com' target='_blank'>
-          <ImFacebook />
-        </a> <a href='http://www.instagram.com' target='_blank'>
+         <a href='https://www.instagram.com/ruthsumargophotography/' target='_blank'>
           <ImInstagram />
         </a>
       </li>
