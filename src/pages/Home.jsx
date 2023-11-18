@@ -15,10 +15,10 @@ const Home = () => {
   animate={{opacity: 1}}
   exit={{opacity: 0}}
   transition={transition1}
-  className='section bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200 overflow-scroll'>
+  className='section bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200 '>
     <div className='container mx-auto h-full relative'>
       {/* text and img wraper */}
-      <div className='flex flex-col justify-center'>
+      <div className='h-full flex flex-col justify-center'>
         <motion.div 
         initial={{opacity: 0, y: '-50%'}}
         animate={{opacity: 1, y: 0}}
@@ -40,14 +40,14 @@ const Home = () => {
           hire me
           </Link>
         </motion.div>
-        <div className='flex justify-center max-h-96 lg:max-h-max max-xs:w-4/5 max-xs:mx-auto'>
+        <div className='flex justify-center max-h-96 lg:max-h-full max-xs:w-4/5 max-xs:mx-auto'>
           <motion.div
           initial={{scale: 0}}
           animate={{scale: 1}}
           exit={{scale: 0}}
           transition={transition1}
-          className='relative bg-gradient-to-b from-neutral-100 to-neutral-100 drop-shadow-2xl lg:-right-60 max-xs:-top-10 max-md:w-[400px] max-md:mx-auto'>
-            <motion.img className='mx-auto h-full lg:h-[70%] lg:ml-[200px]'
+          className='relative w-full bg-gradient-to-b from-neutral-100 to-neutral-100 drop-shadow-2xl lg:-right-60 max-xs:-top-10 max-md:w-[400px] max-md:mx-auto'>
+            <motion.img className='mx-auto h-full lg:h-full'
             whileHover={{scale: 1.1}}
             transition={transition1}
             src={WomanImg} alt=''/>
