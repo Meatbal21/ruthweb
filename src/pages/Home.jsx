@@ -16,7 +16,7 @@ const Home = () => {
   exit={{opacity: 0}}
   transition={transition1}
   className='section bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200 '>
-    <div className='container mx-auto h-full relative'>
+    <div className='container mx-auto h-[50%] w-[50%] relative'>
       {/* text and img wraper */}
       <div className='h-full flex flex-col justify-center'>
         <motion.div 
@@ -26,7 +26,7 @@ const Home = () => {
         transition={transition1}
         onMouseEnter={mouseEnterHandler}
         onMouseLeave={mouseLeaveHandler}
-        className='bottom-80 -left-9 w-full pt-36 pb-14 lg:pt-0 lg:pb-0
+        className='bottom-80 -left-[160px] w-full pt-36 pb-14 lg:pt-0 lg:pb-0
         lg:w-auto z-10 lg:absolute flex flex-col justify-center
         items-center lg:items-start'>
           <h1 className='h1'>
@@ -47,7 +47,7 @@ const Home = () => {
           exit={{scale: 0}}
           transition={transition1}
           className='relative w-full bg-gradient-to-b from-neutral-100 to-neutral-100 drop-shadow-2xl lg:-right-60 max-xs:-top-10 max-md:mx-auto'>
-            <motion.img className='mx-auto h-full max-xs:w-full max-xs:h-full lg:h-full'
+            <motion.img className='mx-auto h-full max-xs:w-full max-xs:h-full lg:h-full lg:w-[80%]'
             whileHover={{scale: 1.1}}
             transition={transition1}
             src={WomanImg} alt=''/>
