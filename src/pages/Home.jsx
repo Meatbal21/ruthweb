@@ -47,7 +47,7 @@ const Home = () => {
           exit={{scale: 0}}
           transition={transition1}
           className='relative w-full bg-gradient-to-b from-neutral-100 to-neutral-100 drop-shadow-2xl lg:-right-60 max-xs:-top-10 max-md:mx-auto'>
-            <motion.img className='mx-auto h-full w-auto lg:h-full'
+            <motion.img className='mx-auto h-full max-xs:w-full max-xs:h-full lg:h-full'
             whileHover={{scale: 1.1}}
             transition={transition1}
             src={WomanImg} alt=''/>
