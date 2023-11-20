@@ -16,7 +16,7 @@ const Home = () => {
   exit={{opacity: 0}}
   transition={transition1}
   className='section bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200 '>
-    <div className='container mx-auto h-[50%] w-[50%] relative'>
+    <div className='container mx-auto h-full lg:h-[50%] lg:w-[50%] relative'>
       {/* text and img wraper */}
       <div className='h-full flex flex-col justify-center'>
         <motion.div 
