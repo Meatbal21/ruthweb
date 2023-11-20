@@ -26,9 +26,9 @@ const Home = () => {
         transition={transition1}
         onMouseEnter={mouseEnterHandler}
         onMouseLeave={mouseLeaveHandler}
-        className='bottom-80 -left-[160px] w-full pt-36 pb-14 lg:pt-0 lg:pb-0
+        className='bottom- -left-[160px] w-full pt-36 pb-14 lg:pt- lg:pb-
         lg:w-auto z-10 lg:absolute flex flex-col justify-center
-        items-center lg:items-start'>
+        items-center lg:items-start '>
           <h1 className='h1'>
             photographer <br />& web design
           </h1>
