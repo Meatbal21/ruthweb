@@ -15,14 +15,12 @@ body {
     @apply py-[19px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white;
   }
 
-  /* *,
-  *::before,
-  *::after {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
-  } */
+  }
   
   :root {
     --primary: #6a59ff;
