@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 //import image
-import WomanImg from '../img/home/28.jpg';
+import WomanImg from '../img/home/home.jpg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {transition1} from '../transitions'
@@ -15,7 +15,7 @@ const Home = () => {
   animate={{opacity: 1}}
   exit={{opacity: 0}}
   transition={transition1}
-  className='section bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200 '>
+  className='section '>
     <div className='container mx-auto h-full lg:h-[50%] lg:w-[50%] relative'>
       {/* text and img wraper */}
       <div className='h-full flex flex-col justify-center'>
@@ -46,7 +46,7 @@ const Home = () => {
           animate={{scale: 1}}
           exit={{scale: 0}}
           transition={transition1}
-          className='relative w-full bg-gradient-to-b from-neutral-100 to-neutral-100 drop-shadow-2xl lg:-right-60 max-xs:-top-10 max-md:mx-auto'>
+          className='relative w-full gradient drop-shadow-2xl lg:-right-60 max-xs:-top-10 max-md:mx-auto'>
             <motion.img className='mx-auto h-full max-xs:w-full max-xs:h-full lg:h-full lg:w-[80%]'
             whileHover={{scale: 1.1}}
             transition={transition1}

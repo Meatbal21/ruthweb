@@ -13,14 +13,14 @@ const ImgCard = ({images}) => (
 
     <div 
     
-    className="flex flex-col p-10 ">
+    className="snap-mandatory snap-y flex flex-col py-10">
         
         {images.image.map((pic,index) => (
         <div 
-        className="flex p-4 mb-3 drop-shadow-2xl rounded-md justify-center items-center content-center bg-neutral-100 bg-opacity-50">
+        className="snap-always snap-start flex py-4 mb-5 drop-shadow-2xl justify-center items-center content-center gradient bg-opacity-50">
             
             <img 
-            className="w-auto h-auto lg:h-[60%] lg:w-[60%] rounded-md" 
+            className="w-full h-auto lg:h-[60%] lg:w-[60%] " 
             src={pic} key={`images-pic-${index}`}/>
             
         </div>
@@ -44,12 +44,12 @@ const PortfolioDetail = () => {
     exit={{opacity: 0, y: '100%'}}
     transition={transition1}
 
-    className='section overflow-scroll bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200 flex flex-col justify-center items-center'>
-        <h1 className="h1 mt-[450px] text-center">{Category}</h1>
+    className='section scroll-smooth overflow-scroll flex flex-col justify-center items-center'>
+        <h1 className="h1 mt-[130px] text-center">{Category}</h1>
         <motion.div
           
         
-            className='h-full container mt-24 '>
+            className='h-full container mt-18 '>
             <motion.div
             onMouseEnter={mouseEnterHandler}
             onMouseLeave={mouseLeaveHandler}
@@ -58,6 +58,7 @@ const PortfolioDetail = () => {
             exit={{opacity: 0, y: '100%'}}
             
             transition={transition1}
+            
             >
           
 

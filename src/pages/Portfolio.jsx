@@ -22,15 +22,15 @@ const Card = ({portimg}) => (
   <div 
     className='text-center text-[20px]'
    key={portimg?.category}>
-    <div className='max-w-[250px] lg:max-w-[320px]
-    h-[187px] lg:h-[220px] bg-accent border-solid border-4 border-neutral-50 '>
+    <div className='mx-auto max-w-[250px] lg:max-w-[320px]
+    h-[187px] lg:h-auto gradient p-1'>
         <img className='object-cover h-full w-full lg:h-[220px]
         hover:scale-110 transition-all duration-500' 
         src={portimg?.image?.[0]}/>
     
     </div>
-    <Link  to={`/details/${portimg?.category}`}>
-      {portimg.category}
+    <Link className='' to={`/details/${portimg?.category}`}>
+      {portimg.category} ({portimg?.image.length})
       </Link>
 
   </div>
@@ -57,7 +57,7 @@ const Portfolio = () => {
   animate={{opacity: 1, y: 0}}
   exit={{opacity: 0, y: '100%'}}
   transition={transition1}
-  className='section bg-gradient-to-b from-neutral-50 via-neutral-200 to-amber-200 overflow-scroll'>
+  className='section overflow-scroll'>
     <div className='container mx-auto h-full relative'>
       <div className='flex flex-col lg:flex-row h-full
       items-center justify-start gap-x-24 text-center
@@ -91,7 +91,7 @@ const Portfolio = () => {
                 <img 
                 onClick={handleRight}
                 className='' 
-                src={portfolioimg[0]?.image[0]} alt='slide_image' />
+                src={portfolioimg[0]?.image[8]} alt='slide_image' />
                 </SwiperSlide>
                 <SwiperSlide>
                 <img 
@@ -101,7 +101,7 @@ const Portfolio = () => {
                 <SwiperSlide>
                 <img 
                 className='' 
-                src={portfolioimg[1]?.image[7]} alt='slide_image' />
+                src={portfolioimg[1]?.image[20]} alt='slide_image' />
                 </SwiperSlide>
                 <SwiperSlide>
                 <img 
@@ -111,12 +111,12 @@ const Portfolio = () => {
                 <SwiperSlide>
                 <img 
                 className='' 
-                src={portfolioimg[3]?.image[0]} alt='slide_image' />
+                src={portfolioimg[3]?.image[4]} alt='slide_image' />
                 </SwiperSlide>
                 <SwiperSlide>
                 <img 
                 className='' 
-                src={portfolioimg[2]?.image[1]} alt='slide_image' />
+                src={portfolioimg[2]?.image[20]} alt='slide_image' />
                 </SwiperSlide>
               
                 <div className="slider-controller">
@@ -138,7 +138,7 @@ const Portfolio = () => {
         className='w-full'>
           <div
           
-          className='grid grid-cols-2 lg:gap-4 w-full j'>
+          className='grid grid-cols-2 lg:gap-4 w-full'>
           {portfolioimg.map((portimg, index) =>(
             <Card key={index} portimg={portimg} />
           ))}
